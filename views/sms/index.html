@@ -1,0 +1,47 @@
+<!-- Formulario SMS -->
+<div class="responsive-container">
+    <div class="card">
+        <div class="card-header no-select">
+            <h3 class="card-title">Envío de SMS</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="form-input mb-3">
+                        <label for="user">Usuario <sup>(user account)</sup></label>
+                        <input type="text" id="user">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="form-input mb-3">
+                        <label for="password">Contraseña <sup>(user account)</sup></label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="form-input mb-3">
+                        <label for="code">Código de país</label>
+                        <select id="code">
+                            <option value="">Cargando...</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6">
+                    <div class="form-input mb-3">
+                        <label for="phone">Nº Teléfono</label>
+                        <input type="number" id="phone">
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-input">
+                        <label for="txt">Mensaje</label>
+                        <textarea id="txt" rows="3"></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-info float-right" onclick="onSend()"><i class="fas fa-paper-plane"></i>Enviar</button>
+        </div>
+    </div>
+</div>

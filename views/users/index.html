@@ -1,0 +1,80 @@
+<!-- Filtros -->
+<div class="responsive-container">
+    <div class="card card-collapsable">
+        <div class="card-header no-select">
+            <h3 class="card-title">Filtrar (<span id="filter-num-users">0</span> resultados)</h3>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <div class="form-input mb-3">
+                        <label for="provider">Usuario <sup>(partner account)</sup></label>
+                        <input type="text" id="provider">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-input mb-3">
+                        <label for="password">Contraseña <sup>(partner account)</sup></label>
+                        <input type="password" id="password">
+                    </div>
+                </div>
+                <!-- <div class="col-12 col-md-4">
+                    <div class="form-input mb-3">
+                        <label for="start_date">Fecha desde</label>
+                        <input type="date" id="start_date">
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="form-input mb-3">
+                        <label for="end_date">Fecha hasta</label>
+                        <input type="date" id="end_date">
+                    </div>
+                </div> -->
+                <div class="col-12 col-md-4">
+                    <div class="form-input mb-3">
+                        <label for="limit">Mostrar</label>
+                        <select id="limit">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="50">50</option>
+                            <option value="100">100</option>
+                            <option value="200">200</option>
+                        </select>
+                    </div>
+                </div>
+                <input type="hidden" id="page" value="1">
+            </div>
+        </div>
+        <div class="card-footer">
+            <button class="btn btn-secondary" onclick="goRoute('users?clear=1')"><i class="fas fa-times"></i>Limpiar</button>
+            <button class="btn btn-info float-right" onclick="onFilter()"><i class="fas fa-filter"></i>Filtrar</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Tabla de usuarios -->
+<div class="responsive-container">
+
+    <!-- Tabla -->
+    <div class="card">
+        <table class="table display" style="width: 100%;" id="usersTable">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th class="no-tablet">Email</th>
+                    <th class="no-mobile">País</th>
+                    <th class="no-mobile">Localidad</th>
+                    <th class="no-mobile">Fecha</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <!-- Not Found -->
+    <div class="not-found mt-5 text-center default-hide">
+        <img src="/assets/img/not_found.svg" alt="Not found">
+    </div>
+
+</div>

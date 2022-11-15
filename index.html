@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png">
+    <title>Test Fontend · Home</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/assets/fonts/poppins.min.css">
+    <link rel="stylesheet" href="/assets/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="/assets/vendor/normalize/normalize.min.css">
+    <link rel="stylesheet" href="/assets/vendor/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css?v=1">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header">
+
+        <!-- Nav -->
+        <nav class="nav">
+            <div class="nav-logo" onclick="goRoute('home')">
+                <span>Test Frontend</span>
+            </div>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="#/users"><i class="fas fa-users"></i> Usuarios</a></li>
+                    <li><a href="#/sms"><i class="fas fa-sms"></i> SMS</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Title Bar -->
+        <div class="title-bar">
+            <span id="page-title">Cargando...</span>
+        </div>
+
+    </header>
+
+    <!-- Content -->
+    <div class="content-body" id="content">
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="/assets/vendor/jquery/jquery-3.5.1.min.js"></script>
+    <script src="/assets/vendor/axios/axios.min.js"></script>
+    <script src="/assets/vendor/sweetalert2/sweetalert2.js"></script>
+    <script src="/assets/vendor/momentjs/moment.min.js"></script>
+
+    <!-- Internal JS -->
+    <script src="/assets/js/router.js?v=1"></script>
+    <script src="/assets/js/main.js?v=1"></script>
+
+</body>
+
+</html>

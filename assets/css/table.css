@@ -1,0 +1,72 @@
+.table {
+  border-spacing: 0;
+  margin-top: 20px;
+}
+.table th {
+  border-bottom: 1px solid #ecf0f3;
+  line-height: 70px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 16px;
+  color: #212121;
+}
+.table td:first-child,
+.table th:first-child {
+  padding-left: 16px;
+}
+.table tr {
+  height: 48px;
+}
+.table tbody tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+.table tbody tr:hover {
+  background-color: #efefef;
+  color: black;
+  cursor: pointer;
+}
+
+.pagination {
+  display: inline-block;
+}
+.pagination .btn-pag {
+  border: 0;
+  line-height: 40px;
+  background-color: white;
+  width: 46px;
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--secondary);
+}
+.pagination .btn-pag.pag-prev:hover,
+.pagination .btn-pag.pag-next:hover {
+  cursor: pointer;
+  color: var(--primary);
+}
+.pagination .btn-pag:disabled {
+  color: var(--gray);
+  cursor: default;
+  pointer-events: none;
+}
+.pagination .btn-pag.pag-prev {
+  border-radius: 0.42rem 0 0 0.42rem;
+}
+.pagination .btn-pag.pag-next {
+  border-radius: 0 0.42rem 0.42rem 0;
+}
+
+.not-found img {
+  max-height: 50vh;
+  max-width: 90%;
+}
+
+@media screen and (max-width: 992px) {
+  .no-tablet {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .no-mobile {
+    display: none;
+  }
+}

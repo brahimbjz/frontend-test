@@ -1,0 +1,55 @@
+/* Variables */
+$dark: #1E1E2D;
+$primary: #3699FF;
+$gray: #A2A3B7;
+$secondary: #434D6B;
+$light: #EBECF5;
+
+
+/* General */
+* {
+    font-family: Poppins, Helvetica, "sans-serif";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: 0;
+}
+body {
+    background-color: $light;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none; 
+}
+body::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+input, button, textarea, select {
+    outline: none;
+}
+#content {
+    margin: 80px 0 50px;
+}
+.responsive-container {
+    width: 95%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.no-select {
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.default-hide {
+    display: none;
+}
+
+
+/* Imports */
+@import 'header',
+'forms',
+'buttons',
+'table',
+'cards',
+'direct_access';

@@ -1,0 +1,17 @@
+.direct-access {
+  opacity: 0.8;
+  -webkit-transition: all 0.2 ease;
+  transition: all 0.2 ease;
+}
+.direct-access:hover {
+  -webkit-box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.1);
+          box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.1);
+  opacity: 1;
+  cursor: pointer;
+}
+.direct-access i {
+  display: block;
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: var(--primary);
+}
